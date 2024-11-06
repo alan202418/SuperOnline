@@ -1,0 +1,7 @@
+{
+    "require": {
+        "mercadopago/dx-php": "^2.6",
+        "picqer/php-barcode-generator": "^2.4",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

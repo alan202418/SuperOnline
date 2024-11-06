@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TecnoCode | Desarrollo a medida</title>
+    <link rel="icon" href="logo_tecnocode.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body, h1, h2, h3, p, a, label, button {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar-brand img { height: 65px; }
+        .video-container { width: 100%; height: 100vh; overflow: hidden; }
+        .video-container video { width: 100%; height: 100%; object-fit: cover; }
+        #contact, footer { background-color: #081321; color: snow; }
+        .service-card { background-color: #f8f9fa; padding: 20px; border-radius: 10px; }
+        .team-img { width: 100%; height: auto; border-radius: 10px; }
+        .ad-section { background-color: #081321; color: white; padding: 50px 20px; }
+        .btn-primary { background-color: #0069d9; border: none; }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* Mantén el video a la altura completa de la pantalla */
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Asegura que el video cubra todo el contenedor */
+        }
+
+        /* Para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .video-container {
+                height: 30vh;
+                /* Ajusta la altura del video para móviles */
+            }
+
+            .video-container video {
+                object-fit: fill;
+                /* Cambia a fill para que el video se ajuste mejor en móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/marca.png" alt="Logo TecnoCode"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Video de Bienvenida -->
+    <div class="video-container" data-aos="fade-up">
+        <video autoplay muted loop>
+            <source src="img/TECNOCODE.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="about" class="py-5">
+        <div class="container" data-aos="fade-right">
+            <h2 class="text-center mb-4">Sobre Nosotros</h2>
+            <p class="text-center">Hoy en día, la tecnología es clave para el crecimiento de pequeñas y medianas empresas, y es fundamental que los emprendedores cuenten con herramientas prácticas y adaptadas a sus necesidades. Tecnocode se posiciona como un aliado en el desarrollo de soluciones de software a medida, especializándose en sistemas de ventas, aplicaciones móviles y páginas web, con el objetivo de ser un apoyo confiable para empresas que buscan mejorar y modernizar su forma de trabajar. Para asegurar la viabilidad de nuestro proyecto, realizamos un estudio de mercado que nos permite entender las
+                necesidades y preferencias de nuestros clientes en áreas
+                como la gestión de negocios. A través de estrategias de
+                marketing en redes sociales y encuestas, damos a conocer
+                nuestros productos y destacamos su accesibilidad y eficacia.
+                Además, creamos contenido útil en nuestra página web, lo
+                que nos permitirá evaluar la sostenibilidad y crecimiento de
+                Tecnocode en el competitivo mercado tecnológico,
+                proyectándonos a mediano y largo plazo</p>
+        </div>
+    </section>
+
+
+    <!-- Sección de Proyectos -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="zoom-in">Proyectos Destacados</h2>
+            <br>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4" data-aos="flip-left">
+                    <div class="card">
+                        <img src="img/Diseño sin título (3).png" class="card-img-top img-fluid" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Coca Cola</h5>
+                            <p class="card-text">Desarrollamos un sistema de control de envíos, optimizando
+                                sus procesos en diferentes lugares.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4" data-aos="flip-up">
+                    <div class="card">
+                        <img src="img/electrodomesticos.png" class="card-img-top img-fluid" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Electro</h5>
+                            <p class="card-text">Desarrollamos una plataforma de comercio de electrodomésticos que mejoró
+                                significativamente las ventas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4" data-aos="flip-right">
+                    <div class="card">
+                        <img src="img/superonline.png" class="card-img-top img-fluid" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Supermercado Superonline</h5>
+                            <p class="card-text">Desarrollamos un sistema de gestión para la empresa Superonline,
+                                optimizando sus procesos de inventario y ventas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Sección de Equipo -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Nuestro Equipo</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <img src="fundador.svg" class="team-img" alt="Miembro del equipo">
+                    <h5 class="text-center mt-2">Alan Baez</h5>
+                    <p class="text-center">Fundador</p>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <img src="programador1.svg" class="team-img" alt="Miembro del equipo">
+                    <h5 class="text-center mt-2">Ortiz Fernando</h5>
+                    <p class="text-center">Programador</p>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <img src="programador2.svg" class="team-img" alt="Miembro del equipo">
+                    <h5 class="text-center mt-2">Portillo Emanuel</h5>
+                    <p class="text-center">Programador</p>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <img src="analista.svg" class="team-img" alt="Miembro del equipo">
+                    <h5 class="text-center mt-2">Silguero Brisa</h5>
+                    <p class="text-center">Analista de Documentacion</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Publicidad y CTA -->
+    <section class="ad-section text-center" data-aos="fade-up">
+        <div class="container">
+            <h2>¡Potencia tu negocio con nosotros!</h2>
+            <p>Con nuestras soluciones tecnológicas, podemos ayudarte a llevar tu negocio al siguiente nivel.</p>
+            
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contact" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <form action="contacto.php" method="POST" class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2024 TecnoCode. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
